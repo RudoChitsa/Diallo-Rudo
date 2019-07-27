@@ -15,11 +15,12 @@
           <label id="name-label" for="name">Name</label>
           <input
             id="name"
-            type="name"
+            type="text"
             class="form-control"
             aria-describedby="nameHelp"
             placeholder="Enter Name"
-          />
+            required
+          >
         </div>
         <div class="form-group">
           <label id="email-label" for="email">E mail</label>
@@ -28,7 +29,8 @@
             type="email"
             class="form-control"
             placeholder="Password"
-          />
+            required
+          >
         </div>
         <div class="form-group">
           <label id="number-label" for="number">Number</label>
@@ -39,14 +41,34 @@
             placeholder="Enter a number"
             min ="0"
             max ="10"
-          />
+          >
         </div>
         <select id="dropdown" name="cars" size="4" multiple>
-  <option value="car 1"> Car 1</option>
-  <option value="Car 2"> car 2</option>
-  <option value="Car 3"> Car 3</option>
-  <option value="Car 4"> Car 4</option>
-</select>
+          <option value="car 1"> Car 1</option>
+          <option value="Car 2"> car 2</option>
+          <option value="Car 3"> Car 3</option>
+          <option value="Car 4"> Car 4</option>
+        </select>
+        <div class="radioButtonClass">
+          <input type="radio" name="radioButton" value="1">Blue Car
+          <input type="radio" name="radioButton" value="2">Red Car
+          <input type="radio" name="radioButton" value="3">Green Car
+          <input type="radio" name="radioButton" value="4">Yellow Car
+          <input type="radio" name="radioButton" value="5">Purple Car
+        </div>
+
+        <div class="checkBoxesClass">
+          <input type="checkbox" name="checkbox" value="1">Jeep
+          <input type="checkbox" name="checkbox" value="2">Hummer
+          <input type="checkbox" name="checkbox" value="3">Lamborghini
+          <input type="checkbox" name="checkbox" value="4">Mercedes
+          <input type="checkbox" name="checkbox" value="5">Venza
+        </div>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" id="submit">
+
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
